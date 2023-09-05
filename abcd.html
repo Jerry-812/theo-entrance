@@ -49,24 +49,31 @@
       position: relative;
       display: flex;
       align-items: center;
+      flex-direction: column; /* Center content vertically */
+      text-align: center; /* Center text horizontally */
     }
     
     .section h2 {
       margin-top: 0;
       color: #405de6;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-family: 'Montserrat', sans-serif;
     }
     
     .section p {
-      color: #777;
-      margin-left: 1rem;
-      margin-top: 0.5rem;
-      font-family: 'Caveat', cursive;
+      color: #444;
+      margin: 0.5rem 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.2rem;
+    }
+    
+    .img-container {
+      display: flex;
+      justify-content: center; /* Center images horizontally */
     }
     
     .img {
-      margin-left: auto;
+      margin: 1rem; /* Add spacing between images */
       max-height: 120px;
       max-width: 120px;
       border-radius: 50%;
@@ -119,12 +126,26 @@
   <div class="container">
     <div class="section">
       <h2 style="font-family: 'Montserrat', sans-serif;">About Me</h2>
-      <p><span class="emoji">📍</span> North Carolina, USA</p>
-      <p>Mostly living in Austin, Texas 🌆</p>
+      <p><span class="emoji">📍</span> Resides in North Carolina, USA</p>
+      <p>Currently residing in beautiful Austin, Texas 🌆</p>
       <img class="img" src="微信图片_20230831133509.jpg" alt="Profile Picture">
     </div>
+    
+    <!-- Use the id attribute for the anchor target -->
+    <div class="section" id="pets-gallery">
+      <h2 style="font-family: 'Montserrat', sans-serif;">Pets</h2>
+      <p>Meet the adorable Cat Taco! 🐱</p>
+      <p>Enjoying every moment with this fluffy friend.</p>
+      <div class="img-container">
+        <img class="img" src="微信图片_20230831133634.jpg" alt="Cat Picture">
+        <img class="img" src="97b024132ba65690f8c4c9a6a97f062.jpg" alt="Cat Picture 1">
+        <img class="img" src="3688a1f29ca942565ee3d3e745d6757.jpg" alt="Cat Picture 2">
+      </div>
+    </div>
+    
     <div class="section">
-      <h2 style="font-family: 'Caveat', cursive;">Languages</h2>
+      <h2 style="font-family: 'Montserrat', sans-serif;">Languages</h2>
+      <p>Fluent in multiple languages for effective communication:</p>
       <div class="languages">
         <div class="language">
           <span class="emoji">🇺🇸</span> English
@@ -136,25 +157,21 @@
           <span class="emoji">🇨🇳</span> Chinese
         </div>
       </div>
-      <p>Believe in the power of communication</p>
     </div>
-    <div class="section">
-      <h2 style="font-family: 'Nunito', sans-serif;">Pets</h2>
-      <p>Meet his Cat Taco! 🐱</p>
-      <img class="img" src="微信图片_20230831133634.jpg" alt="Cat Picture">
-    </div>
+    
     <div class="section">
       <h2 style="font-family: 'Montserrat', sans-serif;">Vision</h2>
-      <p>World means collaboration</p>
-      <p>Aspiring to talk to world leaders, no titles or power needed</p>
-      <p>Advocate for honesty to reduce wrongdoing</p>
+      <p>Envisioning a world built on collaboration and mutual understanding.</p>
+      <p>Aspiring to engage with world leaders, transcending titles and power, to advocate for honesty and reduce wrongdoing.</p>
       <img class="img" src="vision-icon.png" alt="Vision Icon">
     </div>
+    
     <div class="section">
-      <h2 style="font-family: 'Caveat', cursive;">Fun Side</h2>
-      <p>Dreaming of invisibility to prank friends 👻</p>
+      <h2 style="font-family: 'Montserrat', sans-serif;">Fun Side</h2>
+      <p>Indulging in the fantasy of invisibility to play lighthearted pranks on friends 👻</p>
       <img class="img" src="happiness.png" alt="Fun Icon">
     </div>
+    
     <!-- ... Ambitions and Contact sections ... -->
   </div>
 </body>
